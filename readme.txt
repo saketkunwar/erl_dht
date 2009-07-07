@@ -14,7 +14,7 @@
 
 
 
-ERl_dht ver 1.0 is a simulation framework for evaluating and deploying distributed hash table.A simple routing as well as chord dht is currently implemented.
+ERl_dht ver 1.0 is a simulation framework in erlang for evaluating and deploying distributed hash table.A simple routing as well as chord dht is currently implemented.
 
 Requirement
 ------------
