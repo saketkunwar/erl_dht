@@ -1,0 +1,9 @@
+todo
+-------------------
+  periodic fix_finger request to update finger table
+  handling of nodes that die with key value pair
+  implement node recovery
+  some timing issues such as that of stabilization have been choosen arbitarily
+  this needs to be optimized. 
+  other optimization for live deployments
+	

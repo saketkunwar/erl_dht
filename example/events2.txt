@@ -1,0 +1,17 @@
+{init,{numNode,10,0},{resultfile,"result.txt"}}.
+{{event,5},{function,join,3},{at,1}}.
+{{event,6},{function,join,3},{at,1}}.
+{{event,7},{function,leave,2},{at,1}}.
+{{event,1},{function,{store,"saket",5},2},{at,1}}.
+{{event,1},{function,{store,"erlang",10},3},{at,1}}.
+{{event,7},{function,leave,6},{at,2}}.
+{{event,1},{function,join,7},{at,1}}.
+{{event,1},{function,join,8},{at,1}}.
+{{event,1},{function,{lookup,"saket"},1},{at,1}}.
+{{event,1},{function,{lookup,"erlang"},4},{at,1}}.
+{{event,1},{function,join,8},{at,1}}.
+{{event,1},{function,join,8},{at,1}}.
+{{event,9},{function,test_all,{"trapexit",6}},{at,1}}.
+{{event,3},{function,analyse,{"data.dat",succlist}},{at,1}}.
+
+

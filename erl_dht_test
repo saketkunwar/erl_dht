@@ -1,0 +1,1 @@
+erl -noshell -pa ./ebin -s simul eventtest "./example/events.txt"

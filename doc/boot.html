@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module boot</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" title="EDoc">
+</head>
+<body bgcolor="white">
+<div class="navbar"><a name="#navbar_top"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<hr>
+
+<h1>Module boot</h1>
+<ul class="index"><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+<p>Copyright © saket kunwar march 2009
+  Created:May 13, 2009
+  Description: TODO: Add description to node_server</p>
+
+<p><b>Authors:</b> saket kunwar.</p>
+
+<h2><a name="index">Function Index</a></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#addnode-1">addnode/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#addnode-2">addnode/2</a></td><td>add node to the network ,takes V as NodeId and N is the num of finger entry.</td></tr>
+<tr><td valign="top"><a href="#bulkadd-2">bulkadd/2</a></td><td>add nodes to the network in bulk.</td></tr>
+<tr><td valign="top"><a href="#cfindNode-2">cfindNode/2</a></td><td>find the right node for {Key,val} starting from FromNode.</td></tr>
+<tr><td valign="top"><a href="#getpid-1">getpid/1</a></td><td>store {Key,Val} to node NodeID.</td></tr>
+<tr><td valign="top"><a href="#handle-2">handle/2</a></td><td></td></tr>
+<tr><td valign="top"><a href="#init-0">init/0</a></td><td></td></tr>
+<tr><td valign="top"><a href="#joinNetwork-2">joinNetwork/2</a></td><td>update the finger entry of NodeA via Boot node.</td></tr>
+<tr><td valign="top"><a href="#keyHash-1">keyHash/1</a></td><td>generate hash frm a Key.</td></tr>
+<tr><td valign="top"><a href="#lookupkey-2">lookupkey/2</a></td><td>lookup key originating from node FromNode.</td></tr>
+<tr><td valign="top"><a href="#nodelist-0">nodelist/0</a></td><td>get all the nodes in the current network.</td></tr>
+<tr><td valign="top"><a href="#parsenodelist-2">parsenodelist/2</a></td><td>parse the nodelist containing {NodeId,Pid} to NodeId.</td></tr>
+<tr><td valign="top"><a href="#randomId-0">randomId/0</a></td><td>generate randomId wit eigt digits containing (0 to 3).</td></tr>
+<tr><td valign="top"><a href="#remove-1">remove/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#sleep-1">sleep/1</a></td><td></td></tr>
+<tr><td valign="top"><a href="#storekey-2">storekey/2</a></td><td>store key originating from node FromNode.</td></tr>
+</table>
+
+<h2><a name="functions">Function Details</a></h2>
+
+<h3 class="function"><a name="addnode-1">addnode/1</a></h3>
+<div class="spec">
+<p><tt>addnode(V) -&gt; any()</tt></p>
+</div>
+
+<h3 class="function"><a name="addnode-2">addnode/2</a></h3>
+<div class="spec">
+<p><tt>addnode(V, N) -&gt; any()</tt></p>
+</div><p>add node to the network ,takes V as NodeId and N is the num of finger entry</p>
+
+<h3 class="function"><a name="bulkadd-2">bulkadd/2</a></h3>
+<div class="spec">
+<p><tt>bulkadd(T, N) -&gt; any()</tt></p>
+</div><p>add nodes to the network in bulk.</p>
+
+<h3 class="function"><a name="cfindNode-2">cfindNode/2</a></h3>
+<div class="spec">
+<p><tt>cfindNode(FromNode, Key) -&gt; any()</tt></p>
+</div><p>find the right node for {Key,val} starting from FromNode.</p>
+
+<h3 class="function"><a name="getpid-1">getpid/1</a></h3>
+<div class="spec">
+<p><tt>getpid(Node) -&gt; any()</tt></p>
+</div><p>store {Key,Val} to node NodeID.</p>
+
+<h3 class="function"><a name="handle-2">handle/2</a></h3>
+<div class="spec">
+<p><tt>handle(X1, L) -&gt; any()</tt></p>
+</div>
+
+<h3 class="function"><a name="init-0">init/0</a></h3>
+<div class="spec">
+<p><tt>init() -&gt; any()</tt></p>
+</div>
+
+<h3 class="function"><a name="joinNetwork-2">joinNetwork/2</a></h3>
+<div class="spec">
+<p><tt>joinNetwork(Boot, NodeA) -&gt; any()</tt></p>
+</div><p>update the finger entry of NodeA via Boot node.</p>
+
+<h3 class="function"><a name="keyHash-1">keyHash/1</a></h3>
+<div class="spec">
+<p><tt>keyHash(Key::string()) -&gt; Hash::integer()</tt></p>
+</div><p>generate hash frm a Key.</p>
+
+<h3 class="function"><a name="lookupkey-2">lookupkey/2</a></h3>
+<div class="spec">
+<p><tt>lookupkey(FromNode, Key) -&gt; any()</tt></p>
+</div><p>lookup key originating from node FromNode</p>
+
+<h3 class="function"><a name="nodelist-0">nodelist/0</a></h3>
+<div class="spec">
+<p><tt>nodelist() -&gt; any()</tt></p>
+</div><p>get all the nodes in the current network.</p>
+
+<h3 class="function"><a name="parsenodelist-2">parsenodelist/2</a></h3>
+<div class="spec">
+<p><tt>parsenodelist(T, N) -&gt; any()</tt></p>
+</div><p>parse the nodelist containing {NodeId,Pid} to NodeId.</p>
+
+<h3 class="function"><a name="randomId-0">randomId/0</a></h3>
+<div class="spec">
+<p><tt>randomId() -&gt; any()</tt></p>
+</div><p>generate randomId wit eigt digits containing (0 to 3).
+ spec randmId()-&gt;Val::integer()</p>
+
+<h3 class="function"><a name="remove-1">remove/1</a></h3>
+<div class="spec">
+<p><tt>remove(Node) -&gt; any()</tt></p>
+</div>
+
+<h3 class="function"><a name="sleep-1">sleep/1</a></h3>
+<div class="spec">
+<p><tt>sleep(T) -&gt; any()</tt></p>
+</div>
+
+<h3 class="function"><a name="storekey-2">storekey/2</a></h3>
+<div class="spec">
+<p><tt>storekey(FromNode, X2) -&gt; any()</tt></p>
+</div><p>store key originating from node FromNode</p>
+<hr>
+
+<div class="navbar"><a name="#navbar_bottom"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<p><i>Generated by EDoc, Jul 7 2009, 14:53:05.</i></p>
+</body>
+</html>
