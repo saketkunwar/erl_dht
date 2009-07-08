@@ -48,10 +48,175 @@
     <h1><a href="http://github.com/saketkunwar/erl_dht">erl_dht</a> 
       <span class="small">by <a href="http://github.com/saketkunwar">saketkunwar</a></span></h1>
 
-    <div class="description">
-      Simulation framework of distributed hash table for live deployment in erlang
-    </div>
+   <div class=3DSection1>
 
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span
+style=3D'font-size:14.0pt'>Introduction<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><span class=3DSpellE>Erl_<span class=3DGramE>dht</span=
+></span><span
+class=3DGramE><span style=3D'mso-spacerun:yes'>&nbsp; </span>is</span> a
+simulation<span style=3D'mso-spacerun:yes'>&nbsp; </span>framework for eval=
+uating
+and deploying routing schemes for distributed hash <span class=3DSpellE>tab=
+les.Currently</span>
+chord has been implemented but the modular nature of the core <span
+class=3DSpellE>api</span> makes it extensible making it possible to impleme=
+nted
+other protocols.</p>
+
+<p class=3DMsoNormal>An important feature <span class=3DGramE>of<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DSpellE>erl</span></s=
+pan><span
+class=3DSpellE>_dht</span> is the ease of use <span
+style=3D'mso-spacerun:yes'>&nbsp;</span>for live deployment by implementing=
+ a <span
+class=3DSpellE>costum</span> communication interface such as <span class=3D=
+SpellE>tcp/ip</span>.</p>
+
+<p class=3DMsoNormal><span class=3DSpellE>Erl_dht</span> is coded in <span
+class=3DSpellE>erlang</span> <span class=3DSpellE><span class=3DGramE>otp</=
+span></span><span
+class=3DGramE> ,a</span> highly concurrent ,distributed and fault tolerant
+functional programming <span class=3DSpellE>language.The</span> message pas=
+sing
+feature of <span class=3DSpellE>erlang</span> is especially</p>
+
+<p class=3DMsoNormal><span class=3DGramE>suited</span> for performing <span
+class=3DSpellE>simulation.The</span> basic architecture of the <span
+class=3DSpellE>api</span> is as in fig 1.</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><!--[if mso & !supportInlineShapes & supportFields]><s=
+pan
+style=3D'mso-element:field-begin;mso-field-lock:yes'></span><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>SHAPE<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>\* MERGEFORMAT <span style=3D'mso-=
+element:
+field-separator'></span><![endif]--><!--[if gte vml 1]><v:group id=3D"_x000=
+0_s1026"
+ editas=3D"canvas" style=3D'width:4in;height:351pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin=3D"2527,4695" coordsize=3D"4800,6017">
+ <o:lock v:ext=3D"edit" aspectratio=3D"t"/>
+ <v:shapetype id=3D"_x0000_t75" coordsize=3D"21600,21600" o:spt=3D"75"
+  o:preferrelative=3D"t" path=3D"m@4@5l@4@11@9@11@9@5xe" filled=3D"f" strok=
+ed=3D"f">
+  <v:stroke joinstyle=3D"miter"/>
+  <v:formulas>
+   <v:f eqn=3D"if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn=3D"sum @0 1 0"/>
+   <v:f eqn=3D"sum 0 0 @1"/>
+   <v:f eqn=3D"prod @2 1 2"/>
+   <v:f eqn=3D"prod @3 21600 pixelWidth"/>
+   <v:f eqn=3D"prod @3 21600 pixelHeight"/>
+   <v:f eqn=3D"sum @0 0 1"/>
+   <v:f eqn=3D"prod @6 1 2"/>
+   <v:f eqn=3D"prod @7 21600 pixelWidth"/>
+   <v:f eqn=3D"sum @8 21600 0"/>
+   <v:f eqn=3D"prod @7 21600 pixelHeight"/>
+   <v:f eqn=3D"sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect"/>
+  <o:lock v:ext=3D"edit" aspectratio=3D"t"/>
+ </v:shapetype><v:shape id=3D"_x0000_s1027" type=3D"#_x0000_t75" style=3D'p=
+osition:absolute;
+  left:2527;top:4695;width:4800;height:6017' o:preferrelative=3D"f">
+  <v:fill o:detectmouseclick=3D"t"/>
+  <v:path o:extrusionok=3D"t" o:connecttype=3D"none"/>
+  <o:lock v:ext=3D"edit" text=3D"t"/>
+ </v:shape><v:shapetype id=3D"_x0000_t202" coordsize=3D"21600,21600" o:spt=
+=3D"202"
+  path=3D"m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle=3D"miter"/>
+  <v:path gradientshapeok=3D"t" o:connecttype=3D"rect"/>
+ </v:shapetype><v:shape id=3D"_x0000_s1028" type=3D"#_x0000_t202" style=3D'=
+position:absolute;
+  left:3727;top:4849;width:2100;height:1543'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1028'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>Applicat=
+ion
+     layer<o:p></o:p></b></p>
+     <p class=3DMsoNormal>(<span class=3DGramE>implementation</span> of app=
+lication
+     specific features such as replication and replacement)</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id=3D"_x0000_s1029" type=3D"#_x0000_t202" style=3D'posi=
+tion:absolute;
+  left:3727;top:6392;width:2100;height:1697'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1029'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><span class=3DSpellE><b style=3D'mso-bidi-font-we=
+ight:normal'>Dht</b></span><b
+     style=3D'mso-bidi-font-weight:normal'> layer<o:p></o:p></b></p>
+     <p class=3DMsoNormal>For scalable key value </p>
+     <p class=3DMsoNormal>Store and Lookup</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id=3D"_x0000_s1030" type=3D"#_x0000_t202" style=3D'posi=
+tion:absolute;
+  left:3727;top:8089;width:2100;height:2160'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1030'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>Routing =
+layer<o:p></o:p></b></p>
+     <p class=3DMsoNormal>(<span class=3DGramE>such</span> as chord for</p>
+     <p class=3DMsoNormal><span class=3DGramE>node</span> specific feature =
+such as <span
+     class=3DSpellE>maintaing</span> correct successor list ,<span class=3D=
+SpellE>fingertable</span>,
+     and node stabilization etc)</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type=3D"none"/>
+ <w:anchorlock/>
+</v:group><![endif]--><![if !vml]><img width=3D384 height=3D468
+src=3D"47DFAD23_files/image001.gif" v:shapes=3D"_x0000_s1026 _x0000_s1027 _=
+x0000_s1028 _x0000_s1029 _x0000_s1030"><![endif]><!--[if mso & !supportInli=
+neShapes & supportFields]><v:shape
+ id=3D"_x0000_i1025" type=3D"#_x0000_t75" style=3D'width:4in;height:351pt'>
+ <v:imagedata croptop=3D"-65520f" cropbottom=3D"65520f"/>
+</v:shape><span style=3D'mso-element:field-end'></span><![endif]--></p>
+
+<p class=3DMsoNormal style=3D'margin-left:.5in;text-indent:.5in'>Fig 1</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
     <p>Distributed hash table simulation in erlang </p><h2>Install</h2>
 <p>cd /src	
   make 
@@ -73,9 +238,12 @@ the erlang binary will be stored at ebin directory /ebin
 #    limitations under the License.
 </p>
 <h2>Authors</h2>
-<p>saket kunwar (saketkunwar2005@gmail.com)<br/><br/>      </p>
+<p>saket kunwar (saketkunwar2005@gmail.com)
+<br/>
+<br/>      </p>
 <h2>Contact</h2>
-<p>saket kunwar (saketkunwar2005@gmail.com)<br/>      </p>
+<p>saket kunwar (saketkunwar2005@gmail.com)
+<br/>      </p>
 
 
     <h2>Download</h2>
