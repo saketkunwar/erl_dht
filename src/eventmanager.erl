@@ -29,7 +29,8 @@
 loadevent(File)->
     {ok,S}=file:open(File,read),
    	{events,E,T}=get_events(S,[],[]),
-	%%{events,E}.
+	gen_event:start_link({local,ev}),
+	gen_event:add_handler(ev,event_handler,[]),  %%event
 	execute(E,T).
 get_events(S,Events,Timer)->
     case io:read(S,'') of
@@ -46,7 +47,9 @@ get_events(S,Events,Timer)->
 %%try lazy evaluation and curry
 execute([Eh|Et],[Th|Tt])->
 			sleep(Th),
-			Eh(),
+			io:format("event ~p~n",[Eh]),
+			{Type,Fun}=Eh,
+			gen_event:notify(ev,{Type,Fun}),   %%event
 			execute(Et,Tt);
 execute([],_)->
 			io:format("end of simulation ~n"),
@@ -66,7 +69,7 @@ evaluate(Term)->
 	case Eval of
 		init->
 			{init,{numNode,N,_},{resultfile,_}}=Term,
-			{fun()->simul:start(N) end,0};
+			{{init,fun()->erl_dht:start(N) end},0};
 		{event,_}->
 		{function,Function,_}=Fun,
 			case Function of
@@ -74,23 +77,23 @@ evaluate(Term)->
 					%%simul takes two function for adding node one with node num and the other random num
 					{{event,_},{function,join,_},{at,Time}}=Term,
 					%%{fun()->simul:add_node(Node,1) end,Time}
-					{fun()->add_node(fun()->simul:get_boot() end) end,Time}; %% X is the finge and succ entry length
+					{{join,fun()->add_node(fun()->simul:get_boot() end) end},Time}; 
 				leave->
 					{{event,_},{function,leave,Nth},{at,Time}}=Term,
-					{fun()->kill_node(Nth,fun()->boot:nodelist() end) end,Time};
+					{{leave,fun()->kill_node(Nth,fun()->boot:nodelist() end) end},Time};
 				{store,_,_}->
 					{{event,_},{function,{store,Key,Val},Nth},{at,Time}}=Term,
-					{fun()->store({Nth,Key,Val},fun()->boot:nodelist() end) end,Time};
+					{{store,fun()->store({Nth,Key,Val},fun()->boot:nodelist() end) end},Time};
 				{lookup,_}->
 					{{event,_},{function,{lookup,Key},Nth},{at,Time}}=Term,
-					{fun()->lookup({Nth,Key},fun()->boot:nodelist() end) end,Time};
-				test_all->
+					{{lookup,fun()->lookup({Nth,Key},fun()->boot:nodelist() end) end},Time};
+				all_test->
 					%%FromNode is all from all nodes right now
-					{{event,_},{function,test_all,{Key,Val}},{at,Time}}=Term,
-					{fun()->simul:test_all(Key,Val) end,Time};
+					{{event,_},{function,all_test,{Key,Val}},{at,Time}}=Term,
+					{{all_test,fun()->simul:test_all(Key,Val) end},Time};
 				analyse->
 					{{event,_},{function,analyse,{File,Type}},{at,Time}}=Term,
-					{fun()->simul:analyse(File,Type) end,Time}
+					{{analyse,fun()->simul:analyse(File,Type) end},Time}
 				end
 	end.
 add_node(Fun)->

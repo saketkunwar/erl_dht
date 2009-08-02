@@ -14,7 +14,7 @@
 
 
 
-ERl_dht ver 1.0 is a simulation framework in erlang for evaluating and deploying distributed hash table.A simple routing as well as chord dht is currently implemented.
+ERl_dht ver 1.0 is a simulation framework for evaluating and deploying distributed hash table.A simple routing as well as chord dht is currently implemented.
 
 Requirement
 ------------
@@ -42,14 +42,13 @@ run the script erl_dht_test or erl_dht_test.bat (windows)
 
 you can configure the events file or make your own simulations events
   erl -pa ./ebin
-and at the erl promt simul:eventtest("events.txt").
-or simul:start(Num). where Num is the number of nodes
+and at the erl promt erl_dht:eventtest("events.txt").
+or erl_dht:start(Num). where Num is the number of nodes
 
-Have a look at simul.erl or it's doc do perform live tests while the
+Have a look at simul.erl or it's doc to perform live tests while the
 simulation is running.Since the simulation terminal spews simulation result
 it's better to spawn two terminal,one for simulation and the other to
 send simulation specific querries through rpc call.
- 
 
 
 Directory structure
@@ -58,16 +57,10 @@ ebin  output of make i.e cntains the beam files
 doc   edoc generated documentation files
 src   source files
 developer  a more indepth description guide of erl_dht
-example   contains some example of event scripts
 
-todo
------
-some timing issues such as that of stabilization have been choosen arbitarily
-this needs to be optimized. 
 
-known bugs
+bugs
 ------
-
 a few  instances have resulted in infinite finger loop
 from some nodes due to incorrect finger entries.
 fix_finger needs to be  implemented .

@@ -25,9 +25,11 @@
 send_to_endpoint(Endpoint,Msg)->
 	{Command,Data}=Msg,
 	case Endpoint of
-
 			{_,{NId,Host,Port}}->
 				node_client:send(Host,Port,{Command,{Data,NId}});
 			{_,Pid}->
-				Pid ! {Command,Data}
+				erlang:send(Pid,{command,Command,Data})
+				%%Pid ! {Command,Data}
+				%%node:update_routetable(Data)
 			end.
+

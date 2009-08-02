@@ -10,9 +10,9 @@
 %%
 %% Exported Functions
 %%
--export([handle/2,addnode/2,addnode/1,remove/1,bulkadd/2,init/0,nodelist/0,
+-export([handle/2,addnode/2,addnode/1,remove/1,bulkadd/2,init/0,nodelist/0,curry/2,
          parsenodelist/2,cfindNode/2,joinNetwork/2,sleep/1,
-         getpid/1,randomId/0,keyHash/1]).
+         getpid/1,randomId/0,keyHash/1,test/2]).
 -export([storekey/2,lookupkey/2]).
 %%
 %% API Functions
@@ -42,11 +42,11 @@ remove(Node)->rpc(boot,{remove,Node}).
 %% Local Functions
 %%
 
-handle({addnode,V,N},L)->
-				io:format("type ~p~n",[N]),
-				End_p=fun()->self() end,
-    			S=spawn (fun()->node_state:loopnode(V,End_p,dict:new(),{0,[],[],{[],[]}}) end),
-    			{{V,S},lists:append([{V,S}],L)};
+%%handle({addnode,V,N},L)->
+%%				io:format("type ~p~n",[N]),
+%%				S=spawn (fun()->loop(V,V) end),
+%%				S ! init,
+%%    			{{V,S},lists:append([{V,S}],L)};
 handle({remove,V},L)->
 					{value,{Id,Pid}}=lists:keysearch(V,1,L),
 					{ok,lists:delete({Id,Pid},L)};
@@ -58,18 +58,25 @@ handle(nodelist,L)->{L,L}.
 
 %%@doc update the finger entry of NodeA via Boot node.
 joinNetwork(Boot,NodeA)->
-    		%%get route info from Boot
-    		{_,BootPid}=Boot,
-    		BootPid ! {boot_updates,NodeA},
-    		BootPid ! {NodeA,updateNodestate}.
+			%%get boot:nodelist from boot later
+			Boot,
+			End_p=fun()->self() end,
+			Pid=spawn (fun()->node_c:loop([NodeA,End_p,dict:new(),{0,[],[],{[],[]}}]) end),
+			boot:addnode({NodeA,Pid}),
+			node:start(),
+			erlang:send(Pid,init),
+			{NodeA,Pid}.
 
+
+curry(Cmd,Dat)->
+	fun()->node:Cmd(Dat) end.
 %%@doc find the right node for {Key,val} starting from FromNode.
 cfindNode(FromNode,Key)->
 			Hash=keyHash(Key),
 			%%Hash=Key,
    			%%Pid ! {findit,Hash,self()},
 			init_querryholder(FromNode),
-    		endpoint:send_to_endpoint(FromNode,{findit,{Hash,void,0}}),%%??self() for bot nly cause it.
+    		endpoint:send_to_endpoint(FromNode,{findit,{Hash,FromNode,0}}),%%??self() for bot nly cause it.
 			receive
 			after 2000->
 					querry ! {cheak,self()},
@@ -126,11 +133,11 @@ querryreturn(Fr,Node)->
 				querryreturn(Fr,Node);
 			{sendstore,{Key,Val}}->
 				io:format("node to store key ~p~n",[Node]),
-				endpoint:send_to_endpoint(Node,{store,{Key,Val}}),
+				endpoint:send_to_endpoint(Node,{store,{Node,{Key,Val}}}),
 				querryreturn(Fr,Node);
 			{sendlookup,Key}->
 				io:format("send node ~p~n",[Node]),
-				endpoint:send_to_endpoint(Node,{lookup,Key}),
+				endpoint:send_to_endpoint(Node,{lookup,{Node,Key}}),
 				querryreturn(Fr,Node)
 	end.
 
@@ -142,7 +149,7 @@ parsenodelist([],N)->
     		N.
 
 	
-%%K=8 bits and has digit from 1 to 4  i.e X=4
+
 %%@doc generate randomId wit eigt digits containing (0 to 3).
 %%spec randmId()->Val::integer()
 randomId()->
@@ -163,3 +170,7 @@ sleep(T)->
 			io:format("slept for ~p~n",[T]),
 			true
 	end.
+
+
+test(C,D)->
+	erlang:C(D).

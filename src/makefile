@@ -7,8 +7,9 @@
 srcdir=$(cd/src)
 
 
-MODS=$(srcdir) endpoint node_state node_helper boot analyserZ eventmanager \
-                simul find 
+MODS=$(srcdir)  node_state node_helper boot analyserZ eventmanager \
+                event_handler node node_c stabilizer erl_dht \
+		endpoint dhash simul find 
 		
 
 ERL=erl -boot -pa  start_clean
