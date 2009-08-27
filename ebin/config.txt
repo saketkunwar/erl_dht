@@ -1,0 +1,6 @@
+{{localhostname,"localhost"},
+{startport,5000},
+{maxapp,10},
+{boothost,"localhost"},
+{bootport,5009}}.
+
