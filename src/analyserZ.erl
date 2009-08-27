@@ -69,9 +69,6 @@ filewrite(File,L)->
         
       	io:format(S,"~p.~n",[Sterms]),
         file:close(S).
-
-
-        
 %%@doc compares the simulated result to route obtained thru brute method for each node in list [H|T] where H=NodeId.
 %%fix-remove [H|T] and extract node from Simterms
 compareRoute([H|T],SimTerms,BruteTerms)->
@@ -100,9 +97,3 @@ compareRoute([H|T],SimTerms,BruteTerms)->
                compareRoute(T,SimTerms,BruteTerms);
 compareRoute([],_,_)->
     			ok.
-
-
-%%
-%% Local Functions
-%%
-

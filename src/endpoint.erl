@@ -21,12 +21,12 @@
 %%
 %% Local Functions
 %%
-
+%%@doc send message to the endpoint
 send_to_endpoint(Endpoint,Msg)->
 	{Command,Data}=Msg,
 	case Endpoint of
 			{_,{NId,Host,Port}}->
-				node_client:send(Host,Port,{Command,{Data,NId}});
+				tcp_node_client:send(Host,Port,{Command,{Data,NId}});
 			{_,Pid}->
 				erlang:send(Pid,{command,Command,Data})
 				%%Pid ! {Command,Data}

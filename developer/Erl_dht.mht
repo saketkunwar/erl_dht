@@ -1,0 +1,1005 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_01C9FFB5.1D883900"
+
+This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive, such as Microsoft Internet Explorer.
+
+------=_NextPart_01C9FFB5.1D883900
+Content-Location: file:///C:/2AF11D74/Erl_dht.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"Erl_dht_files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"Erl_dht_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Erl_dht</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>UTTAM KUNWAR</o:Author>
+  <o:LastAuthor>sk</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>439</o:TotalTime>
+  <o:LastPrinted>2009-07-07T08:13:00Z</o:LastPrinted>
+  <o:Created>2009-07-08T04:31:00Z</o:Created>
+  <o:LastSaved>2009-07-08T04:31:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>687</o:Words>
+  <o:Characters>3922</o:Characters>
+  <o:Company> IEMP</o:Company>
+  <o:Lines>32</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4600</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:CMR10;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US style=3D'tab-interval:.5in'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span
+style=3D'font-size:24.0pt'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>ERl_DHT version 1.0<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span
+style=3D'font-size:24.0pt'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;
+</span><o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span
+style=3D'font-size:24.0pt'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;
+</span><span style=3D'mso-tab-count:1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>User Guide<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'margin-left:.5in;text-indent:.5in'><span
+style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'margin-left:1.0in;text-indent:.5in'><span lan=
+g=3DSV
+style=3D'mso-ansi-language:SV'>Saket kunwar<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'margin-left:1.0in;text-indent:.5in'><span lan=
+g=3DSV
+style=3D'mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'margin-left:2.0in;text-indent:.5in'><span lan=
+g=3DSV
+style=3D'mso-ansi-language:SV'>July 7,2009<b style=3D'mso-bidi-font-weight:=
+normal'><o:p></o:p></b></span></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:24.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:24.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span lang=3D=
+SV
+style=3D'font-size:14.0pt;mso-ansi-language:SV'><o:p>&nbsp;</o:p></span></b=
+></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'>Copyright 2009 saket kunw=
+ar</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>Licensed under the Apache Li=
+cense,
+Version 2.0 (the &quot;License&quot;);</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>you may not use this file ex=
+cept
+in compliance with the License.</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>You may obtain a copy of the
+License at</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>Unless required by applicabl=
+e law
+or agreed to in writing, software</p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>distributed under the Licens=
+e is
+distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS=
+ OF
+ANY KIND, either express or implied.<span style=3D'mso-spacerun:yes'>&nbsp;=
+&nbsp;
+</span>See the License for the specific language governing permissions and =
+limitations
+under the License.</p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><span
+style=3D'font-size:14.0pt'>Introduction<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Erl_dht<span style=3D'mso-spacerun:yes'>&nbsp; </span>=
+is a
+simulation<span style=3D'mso-spacerun:yes'>&nbsp; </span>framework for eval=
+uating
+and deploying routing schemes for distributed hash tables.Currently chord h=
+as
+been implemented but the modular nature of the core api makes it extensible
+making it possible to implemented other protocols.</p>
+
+<p class=3DMsoNormal>An important feature of<span style=3D'mso-spacerun:yes=
+'>&nbsp;
+</span>erl_dht is the ease of use <span
+style=3D'mso-spacerun:yes'>&nbsp;</span>for live deployment by implementing=
+ a
+costum communication interface such as tcp/ip.</p>
+
+<p class=3DMsoNormal>Erl_dht is coded in erlang otp ,a highly concurrent ,d=
+istributed
+and fault tolerant functional programming language.The message passing feat=
+ure
+of erlang is especially</p>
+
+<p class=3DMsoNormal>suited for performing simulation.The basic architectur=
+e of
+the api is as in fig 1.</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><!--[if mso & !supportInlineShapes & supportFields]><s=
+pan
+style=3D'mso-element:field-begin;mso-field-lock:yes'></span><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>SHAPE<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>\* MERGEFORMAT <span style=3D'mso-=
+element:
+field-separator'></span><![endif]--><!--[if gte vml 1]><v:group id=3D"_x000=
+0_s1029"
+ editas=3D"canvas" style=3D'width:4in;height:351pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin=3D"2527,4695" coordsize=3D"4800,6017">
+ <o:lock v:ext=3D"edit" aspectratio=3D"t"/>
+ <v:shapetype id=3D"_x0000_t75" coordsize=3D"21600,21600" o:spt=3D"75"
+  o:preferrelative=3D"t" path=3D"m@4@5l@4@11@9@11@9@5xe" filled=3D"f" strok=
+ed=3D"f">
+  <v:stroke joinstyle=3D"miter"/>
+  <v:formulas>
+   <v:f eqn=3D"if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn=3D"sum @0 1 0"/>
+   <v:f eqn=3D"sum 0 0 @1"/>
+   <v:f eqn=3D"prod @2 1 2"/>
+   <v:f eqn=3D"prod @3 21600 pixelWidth"/>
+   <v:f eqn=3D"prod @3 21600 pixelHeight"/>
+   <v:f eqn=3D"sum @0 0 1"/>
+   <v:f eqn=3D"prod @6 1 2"/>
+   <v:f eqn=3D"prod @7 21600 pixelWidth"/>
+   <v:f eqn=3D"sum @8 21600 0"/>
+   <v:f eqn=3D"prod @7 21600 pixelHeight"/>
+   <v:f eqn=3D"sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect"/>
+  <o:lock v:ext=3D"edit" aspectratio=3D"t"/>
+ </v:shapetype><v:shape id=3D"_x0000_s1028" type=3D"#_x0000_t75" style=3D'p=
+osition:absolute;
+  left:2527;top:4695;width:4800;height:6017' o:preferrelative=3D"f">
+  <v:fill o:detectmouseclick=3D"t"/>
+  <v:path o:extrusionok=3D"t" o:connecttype=3D"none"/>
+  <o:lock v:ext=3D"edit" text=3D"t"/>
+ </v:shape><v:shapetype id=3D"_x0000_t202" coordsize=3D"21600,21600" o:spt=
+=3D"202"
+  path=3D"m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle=3D"miter"/>
+  <v:path gradientshapeok=3D"t" o:connecttype=3D"rect"/>
+ </v:shapetype><v:shape id=3D"_x0000_s1030" type=3D"#_x0000_t202" style=3D'=
+position:absolute;
+  left:3727;top:4849;width:2100;height:1543'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1030'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>Applicat=
+ion
+     layer<o:p></o:p></b></p>
+     <p class=3DMsoNormal>(implementation of application specific features =
+such
+     as replication and replacement)</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id=3D"_x0000_s1031" type=3D"#_x0000_t202" style=3D'posi=
+tion:absolute;
+  left:3727;top:6392;width:2100;height:1697'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1031'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>Dht laye=
+r<o:p></o:p></b></p>
+     <p class=3DMsoNormal>For scalable key value </p>
+     <p class=3DMsoNormal>Store and Lookup</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id=3D"_x0000_s1032" type=3D"#_x0000_t202" style=3D'posi=
+tion:absolute;
+  left:3727;top:8089;width:2100;height:2160'>
+  <v:textbox style=3D'mso-next-textbox:#_x0000_s1032'>
+   <![if !mso]>
+   <table cellpadding=3D0 cellspacing=3D0 width=3D"100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>Routing =
+layer<o:p></o:p></b></p>
+     <p class=3DMsoNormal>(such as chord for</p>
+     <p class=3DMsoNormal>node specific feature such as maintaing correct s=
+uccessor
+     list ,fingertable, and node stabilization etc)</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type=3D"none"/>
+ <w:anchorlock/>
+</v:group><![endif]--><![if !vml]><img width=3D384 height=3D468
+src=3D"Erl_dht_files/image001.gif" v:shapes=3D"_x0000_s1029 _x0000_s1028 _x=
+0000_s1030 _x0000_s1031 _x0000_s1032"><![endif]><!--[if mso & !supportInlin=
+eShapes & supportFields]><v:shape
+ id=3D"_x0000_i1025" type=3D"#_x0000_t75" style=3D'width:4in;height:351pt'>
+ <v:imagedata croptop=3D"-65520f" cropbottom=3D"65520f"/>
+</v:shape><span style=3D'mso-element:field-end'></span><![endif]--></p>
+
+<p class=3DMsoNormal style=3D'margin-left:.5in;text-indent:.5in'>Fig 1</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'><o:p>&nbsp;</=
+o:p></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></spa=
+n></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-size:14.0pt;font-=
+family:
+"Courier New"'>Building<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>cd /src<span style=3D'mso-tab-count:1'> </span>=
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'><span style=3D'mso-spacerun:yes'>&nbsp; </span>=
+make <o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>the binary will be stored at ebin directory<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>/ebin<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:Arial'><o:=
+p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:Arial'>Run=
+ning<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier N=
+ew"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>There is an example of events file i.e
+&quot;events.txt&quot; that contains the<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>events to be executed..<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>run the script erl_dht_test or erl_dht_test.bat
+(windows)<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>or<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'><span style=3D'mso-spacerun:yes'>&nbsp; </span>=
+erl -pa
+./ebin<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>and at the erl promt
+simul:eventtest(&quot;events.txt&quot;).<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>or simul:start(Num). where Num is the number of=
+ nodes<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>When<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>performing simulation the terminal that runs the simulation often ge=
+ts
+swamped with simulation result outputs and is difficult to send other live
+commands.To overcome this i usually spawn a terminal with<o:p></o:p></span>=
+</p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>erl &#8211;sname <span
+style=3D'mso-spacerun:yes'>&nbsp;</span>somename and execute the simulation=
+ at
+the erl terminal then<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>I spawn another terminal with erl &#8211;sname
+someothername and send node join,node leave ,store or lookup commands throu=
+gh
+the someothername<span style=3D'mso-spacerun:yes'>&nbsp; </span>terminal wi=
+th rpc
+calls as :<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>rpc:call(somename@host,simul,stop,[]).<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>etc<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:Arial'>This way I can monitor simulation events as wel=
+l as
+send commands or querries to the simulation.Have a look at simul.erl or
+it&#8217;s doc to perform other simulation specific tests.<o:p></o:p></span=
+></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'>add node:<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>To add node during simulation <o:p>=
+</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>Boot=3Drpc:call(somename@host,simul=
+,get_boot,[]).<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><span style=3D'mso-spacerun:yes'>&nbsp;=
+ </span>rpc:call(somename@host,simul,add_node,[Boot]).<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'>kill Node:<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>To kill node during simulation<o:p>=
+</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'>rpc:call(somename@host,boot,nodelist,[]=
+).<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'>Select node Node from the nodelist then=
+ do<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><span style=3D'mso-spacerun:yes'>&nbsp;=
+</span>rpc:call(somename@host,simul,kill_node,[Node]).<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><span
+style=3D'font-family:"Courier New"'>Follow the same procedures for store,lo=
+okup
+and other test.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier N=
+ew"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'tab-stops:74.25pt'><b style=3D'mso-bidi-font-=
+weight:
+normal'><span style=3D'font-size:14.0pt'>Event Prototype<o:p></o:p></span><=
+/b></p>
+
+<p class=3DMsoNormal><span style=3D'mso-spacerun:yes'>&nbsp;</span></p>
+
+<p class=3DMsoNormal>Most Simulation specific use can be accomplished throu=
+gh a
+script i.e</p>
+
+<p class=3DMsoNormal>simul:eventtest(&#8220;eventfile.txt&#8221;). Where
+eventfile.txt is the event script</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>{init,{numNode,2,0},{resultfile,&quot;result.txt&quot;=
+}}.</p>
+
+<p class=3DMsoNormal>{{event,Sn},{function,join,random},{at,T}}.</p>
+
+<p class=3DMsoNormal>{{event,Sn},{function,leave,Num},{at,T}}.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>%%the num node in masterlist of no=
+des</p>
+
+<p class=3DMsoNormal>{{event,Sn},{function,{store,&quot;kunwar&quot;,10},3}=
+{at,T}}.</p>
+
+<p class=3DMsoNormal>{{event,Sn},{function,{lookup,&quot;kunwar&quot;},3}{a=
+t,T}}.</p>
+
+<p class=3DMsoNormal><span lang=3DSV style=3D'mso-ansi-language:SV'>{{event=
+,Sn},{function,fingertest,{&quot;saket&quot;,Val}},{at,T}}.<o:p></o:p></spa=
+n></p>
+
+<p class=3DMsoNormal>{{event,Sn},{function,analyse,{&quot;data.dat&quot;,su=
+cclist}},{at,T}}.</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>where T is the time interval to wait till<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>next execution</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>The eventmanager module loads events to be executed</p>
+
+<p class=3DMsoNormal>sequentially from the event file and evalutes a lazy
+function for each events.</p>
+
+<p class=3DMsoNormal>The stored lazy function are executed in a <span
+style=3D'font-size:10.0pt;font-family:CMR10;mso-bidi-font-family:CMR10'>dis=
+crete
+event driven simulation.</span></p>
+
+<p class=3DMsoNormal>The parameter {at,T} determines T ,which is the time t=
+he
+next event waits to be executed.</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>The analyserZ module does the required analysis of<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>the correctness of the routing</p>
+
+<p class=3DMsoNormal>List i.e the successor list and the finger table entri=
+es.The
+lists are compared against</p>
+
+<p class=3DMsoNormal>a brute computation. Due to the algorithm of chord all
+predecessor nodes are correct as</p>
+
+<p class=3DMsoNormal>compared to brute evaluation<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>however it is not necessary that a=
+ll
+nodes should have correct successor or finger <span
+style=3D'mso-spacerun:yes'>&nbsp;</span>list <span
+style=3D'mso-spacerun:yes'>&nbsp;</span>since nodes are only aware of the
+departure of immediate successor<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>and are thus updated or when the analysis is performed the nodes
+haven&#8217;t had enough stabilization period to update it&#8217;s successo=
+r list.</p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier N=
+ew"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier N=
+ew"'>Directory
+Structure<o:p></o:p></span></b></p>
+
+<table class=3DMsoTableGrid border=3D1 cellspacing=3D0 cellpadding=3D0
+ style=3D'border-collapse:collapse;border:none;mso-border-alt:solid windowt=
+ext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-inside=
+h:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=3D91 valign=3Dtop style=3D'width:.95in;border:solid windowtext =
+1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'>ebin<o:p></o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'>src<o:p></o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'>doc<o:p></o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'>example<o:p></o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'>example<o:p></o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><b
+  style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier=
+ New"'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width=3D499 valign=3Dtop style=3D'width:5.2in;border:solid windowtext=
+ 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><span
+  style=3D'font-family:"Courier New"'>Directory where all the beam files are
+  stored after compilation<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><span
+  style=3D'font-family:"Courier New"'>Contains all the source files<o:p></o=
+:p></span></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><span
+  style=3D'font-family:"Courier New"'>Contains all the edoc generated doc f=
+iles<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><span
+  style=3D'font-family:"Courier New"'>Few examples of simulation usage<o:p>=
+</o:p></span></p>
+  <p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:n=
+one'><span
+  style=3D'font-family:"Courier New"'>Contains some example of event script=
+<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=3DMsoNormal style=3D'mso-layout-grid-align:none;text-autospace:non=
+e'><b
+style=3D'mso-bidi-font-weight:normal'><span style=3D'font-family:"Courier N=
+ew"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><span style=3D'mso-spacerun:yes'>&nbsp;</span></p>
+
+<p class=3DMsoNormal><span style=3D'mso-spacerun:yes'>&nbsp;</span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_01C9FFB5.1D883900
+Content-Location: file:///C:/2AF11D74/Erl_dht_files/image001.gif
+Content-Transfer-Encoding: base64
+Content-Type: image/gif
+
+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
+5p3fCZ7hiQAFAAA7
+
+------=_NextPart_01C9FFB5.1D883900
+Content-Location: file:///C:/2AF11D74/Erl_dht_files/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../Erl_dht.htm"/>
+ <o:File HRef=3D"image001.gif"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01C9FFB5.1D883900--

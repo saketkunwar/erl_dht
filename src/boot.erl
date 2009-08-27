@@ -11,7 +11,7 @@
 %% Exported Functions
 %%
 -export([handle/2,addnode/2,addnode/1,remove/1,bulkadd/2,init/0,nodelist/0,curry/2,
-         parsenodelist/2,cfindNode/2,joinNetwork/2,sleep/1,
+         parsenodelist/2,cfindNode/2,joinNetwork/2,sleep/1,querry_return/1,
          getpid/1,randomId/0,keyHash/1,test/2]).
 -export([storekey/2,lookupkey/2]).
 %%
@@ -60,14 +60,24 @@ handle(nodelist,L)->{L,L}.
 joinNetwork(Boot,NodeA)->
 			%%get boot:nodelist from boot later
 			Boot,
-			End_p=fun()->self() end,
-			Pid=spawn (fun()->node_c:loop([NodeA,End_p,dict:new(),{0,[],[],{[],[]}}]) end),
-			boot:addnode({NodeA,Pid}),
-			node:start(),
-			erlang:send(Pid,init),
+			case NodeA of
+			{Id,End}->
+				
+				End_p=fun()->End end,
+				register(nnn,spawn(fun()->node_c:loop([Id,End_p,dict:new(),{0,[],[],{[],[]}}]) end)),
+				io:format("whereis ??? ~p~n",[whereis(nnn)]),
+				boot:addnode(NodeA),
+				Pid=null,
+				node:start(),
+				nnn ! init;
+			_->
+				End_p=fun()->self() end,
+				Pid=spawn (fun()->node_c:loop([NodeA,End_p,dict:new(),{0,[],[],{[],[]}}]) end),
+				boot:addnode({NodeA,Pid}),
+				node:start(),
+				erlang:send(Pid,init)
+			end,
 			{NodeA,Pid}.
-
-
 curry(Cmd,Dat)->
 	fun()->node:Cmd(Dat) end.
 %%@doc find the right node for {Key,val} starting from FromNode.
@@ -78,47 +88,38 @@ cfindNode(FromNode,Key)->
 			init_querryholder(FromNode),
     		endpoint:send_to_endpoint(FromNode,{findit,{Hash,FromNode,0}}),%%??self() for bot nly cause it.
 			receive
-			after 2000->
+			after 5000->
 					querry ! {cheak,self()},
 					receive
 						{yes,N}->
 								io:format("returned ~p node is  alive,querried from ~p~n",[N,FromNode]);
 						{no,_}->
 								io:format("no node returned,at this time,querry from ~p~n",[FromNode])
-								
-					
 						end
 			end.
-			
-
-						
-			
-
-
-
-
 init_querryholder(Fr)->
 	case whereis(querry) of
 	undefined->
-			register(querry,spawn (fun()->querryreturn(Fr,[]) end));
-			
+			register(querry,spawn (fun()->querryreturn(Fr,[]) end));		
    Pid->
-			{ok,Pid}
+	   		{ok,Pid}
 	end.
 
 %%@doc store key originating from node FromNode  
 storekey(FromNode,{Key,Val})->
 				io:format("inititating key store ~n"),
 				cfindNode(FromNode,Key),
-				querry ! {sendstore,{Key,Val}}.
+				querry ! {sendstore,{Key,Val}},
+				querry ! reinit.
 %%@doc lookup key originating from node FromNode
 lookupkey(FromNode,Key)->
 				cfindNode(FromNode,Key),
-				querry ! {sendlookup,Key}.
+				querry ! {sendlookup,Key},
+				querry ! reinit.
 				
 querryreturn(Fr,Node)->
 	receive
-			{return,N,_,C}->
+			{return,{N,_,C}}->
 				io:format("hop count ~p~n",[C]),
 				querryreturn(Fr,N);
 			reinit->
@@ -133,30 +134,39 @@ querryreturn(Fr,Node)->
 				querryreturn(Fr,Node);
 			{sendstore,{Key,Val}}->
 				io:format("node to store key ~p~n",[Node]),
-				endpoint:send_to_endpoint(Node,{store,{Node,{Key,Val}}}),
+				if (Node=/=[])->
+						endpoint:send_to_endpoint(Node,{store,{Node,{Key,Val}}});
+					true->
+						[]
+				end,
 				querryreturn(Fr,Node);
 			{sendlookup,Key}->
 				io:format("send node ~p~n",[Node]),
-				endpoint:send_to_endpoint(Node,{lookup,{Node,Key}}),
-				querryreturn(Fr,Node)
+				if (Node=/=[])->
+						endpoint:send_to_endpoint(Node,{lookup,{Node,Key}});	
+				   true->
+					   []
+				end,
+				querryreturn(Fr,Node);
+			Any->
+				   io:format("received any by querry ~p~n",[Any]),
+				   querryreturn(Fr,Node)				   
 	end.
-
+querry_return(Dat)->
+	querry ! {return,Dat},
+	[].
 %%@doc parse the nodelist containing {NodeId,Pid} to NodeId.
 parsenodelist([H|T],N)->
     		{NodeId,_}=H,
     		parsenodelist(T,[NodeId|N]);
 parsenodelist([],N)->
     		N.
-
-	
-
 %%@doc generate randomId wit eigt digits containing (0 to 3).
 %%spec randmId()->Val::integer()
 randomId()->
 			crypto:start(),
 			Hi=trunc(math:pow(2,26)),
 			crypto:rand_uniform(1,Hi).
-			
 
 %%@doc generate hash frm a Key.
 %%@spec keyHash(Key::string())->Hash::integer()
@@ -170,7 +180,5 @@ sleep(T)->
 			io:format("slept for ~p~n",[T]),
 			true
 	end.
-
-
 test(C,D)->
 	erlang:C(D).

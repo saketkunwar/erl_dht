@@ -34,7 +34,7 @@ loadevent(File)->
 	execute(E,T).
 get_events(S,Events,Timer)->
     case io:read(S,'') of
-        	{ok,Term}->
+        {ok,Term}->
 				{Eval,Tim}=evaluate(Term),
 				get_events(S,[Eval|Events],[Tim|Timer]);
                    
