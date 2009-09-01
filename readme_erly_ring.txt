@@ -14,8 +14,8 @@
 
 Intro
 ----
-  erly_ring is an implementation of erl_dht(git clone git://github.com/saketkunwar/erl_dht.git) 
-for use with tcp/ip socket based communication.All modules and functions remains unchanged
+  erly_ring is an implementation of tcp/ip socket based communication dervied from the simulation version.
+.All modules and functions remains unchanged
 i.e it is used as in the simulation version.This is largely due to the message passing programming 
 feature faciliated by the use of erlang.The only difference is that erly_ring is
 adapted to use the communication interface provided by 
