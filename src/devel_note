@@ -1,0 +1,14 @@
++
+development
+1.keep a file->
+   gethash and store hing the hash with value indicating the [Home location of file]
+   
+ 2.new
+ 		buffmap--loop for streams
+ 		cache-handles cache read write
+ 		remote_fetch
+ 		remote_search
+ 		remote_replication
+ 		lib_misc
+ 		filestreams2 
+ 		 benchmark-not implemented yet
