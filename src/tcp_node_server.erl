@@ -10,7 +10,7 @@
 -behaviour(gen_server).
 
 %% API
--export([start_link/1,message/1,par_connect/2,loop/2,cheakmessage/2]).
+-export([start_link/1,message/1,par_connect/2,loop/2,cheakmessage/1]).
 
 %% gen_server callbacks
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2,
@@ -46,6 +46,7 @@ init([Port]) ->
 	process_flag(trap_exit, true),
 	{ok,Listen}=gen_tcp:listen(Port,[binary,{packet,0},{reuseaddr,true},{active,true}]),
 	register(nodemon,spawn(fun()->par_connect(Listen,[]) end)),
+	message_handler:start(),
     io:format("listening on port ~p~n",[Port]),
     {ok,0}.
 par_connect(Listen,NodetabPid)->
@@ -63,7 +64,7 @@ loop(Socket,NodetabPid)->
             Str=binary_to_term(Bin),
             {Request,Message}=Str,
 			io:format("server unpacked ~p~n",[Request]),
-            cheakmessage({Request,Message},NodetabPid),
+            cheakmessage({Request,Message}),
 			%%peerinfo(Socket),
 			gen_tcp:close(Socket),
             loop(Socket,NodetabPid);
@@ -76,31 +77,15 @@ loop(Socket,NodetabPid)->
           	gen_tcp:close(Socket)
 		end.   
 %%@doc cheak the message received for internal routing for updating table entries
-cheakmessage({Request,Message},NodetabPid)->
+cheakmessage({Request,Message})->
 	Bool=lists:member(Request,?Command),
 	if (Bool=:=true)->
 			dispatcher:dispatch_to(Request,Message);
 	true->
-		case Request of
-		
-		newnode->
-				io:format("adding new node ~p~n ",[Message]),
-				lists:append(NodetabPid,[Message]);
-		join_ring->      %%boot specific
-				End_Node=Message,
-				io:format("received join request from ~p~n",[End_Node]),
-				boot:addnode(End_Node),
-				node_c:node_add(End_Node);
-		remove_deadnode->
-				Id=Message,
-				io:format("received remove dead node request ~n"),
-				boot:remove(Id);
-		_->
-      	io:format("received message ~p~n ",[Message]),  
-	    io:format("content of nodetabpid ~p~n",[NodetabPid])
-		
-		end
-end.
+		  	message_handler:Request(Message)   %%adapt it to handle the command in define???
+		%%id??
+	end.
+
 peerinfo(Socket)->
     {ok,{RAddress,RPort}}=inet:peername(Socket),
     {ok,{LAddress,LPort}}=inet:sockname(Socket),

@@ -50,8 +50,18 @@ handle_event({all_test,F}, N) ->
 	io:format("*** evaluating event~n"),
 	F(),
 	{ok, N+1};
-
-
+handle_event({store_file_to_cache,F},N)->
+	io:format("*** evaluating event~n"),
+	F(),
+	{ok, N+1};
+handle_event({eager_replication,F}, N) ->
+	io:format("*** evaluating event eager_replication ~n"),
+	F(),
+	{ok, N+1};
+handle_event({fetch_file,F}, N) ->
+	io:format("*** evaluating event fetch_file ~n"),
+	F(),
+	{ok, N+1};
 handle_event(Event, N) ->
     io:format("*** unmatched event:~p~n",[Event]),
     {ok, N}.

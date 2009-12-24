@@ -29,6 +29,7 @@ start(Num)->
    	node_state:boot_start(),
 	R=randomId(),
     Boot=boot:joinNetwork(R,R),
+	cache:create(R),
 	io:format("this is the boot ~p~n",[Boot]),
     exectest(Boot,Num),
    	io:format("the tablses ---unsorted----------~p~n",[boot:nodelist()]),
@@ -41,8 +42,8 @@ stop()->
 	dhash:stop(),
 	stabilizer:stop(),
 	node:stop(),
+	stream_handler:stop(),
 	unregister(boot).
-
 
 exectest(Boot,Num)->
 	io:format("Boot is ~p~n",[Boot]),

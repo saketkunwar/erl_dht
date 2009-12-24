@@ -73,7 +73,7 @@ handle_call({stab,NodeState},_From,State)->
 					Ns=NodeState;
 			Pid->
 					Pid ! {status,self()},
-					Pid ! {exec_rules,3},
+					
 					receive
 						{cheak,{_,C}}->
 							
@@ -144,13 +144,14 @@ nodemon(Succ,C)->
        receive
 				{cheak_ok,_}->
 					nodemon(Succ,0);
+				{exec_rule,D}->
+					io:format("~p EXEC_RULE ~p~n",[self(),D*2]),
+					nodemon(Succ,C);
 				{set,Nc}->
 					nodemon(Succ,Nc);
 		   		{status,From}->
 					From ! {cheak,{Succ,C}},
 					nodemon(Succ,1);
-				{exec_rules,Data}->
-					io:format("~p EXECUTING BOIDS ~p~n",[self(),2*Data]);
 				Any->
 					Any,
 					nodemon(Succ,C)

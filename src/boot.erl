@@ -13,7 +13,7 @@
 -export([handle/2,addnode/2,addnode/1,remove/1,bulkadd/2,init/0,nodelist/0,curry/2,
          parsenodelist/2,cfindNode/2,joinNetwork/2,sleep/1,querry_return/1,
          getpid/1,randomId/0,keyHash/1,test/2]).
--export([storekey/2,lookupkey/2]).
+-export([storekey/2,lookupkey/2,updatekey/2]).
 %%
 %% API Functions
 %%
@@ -60,6 +60,7 @@ handle(nodelist,L)->{L,L}.
 joinNetwork(Boot,NodeA)->
 			%%get boot:nodelist from boot later
 			Boot,
+			
 			case NodeA of
 			{Id,End}->
 				
@@ -75,6 +76,7 @@ joinNetwork(Boot,NodeA)->
 				Pid=spawn (fun()->node_c:loop([NodeA,End_p,dict:new(),{0,[],[],{[],[]}}]) end),
 				boot:addnode({NodeA,Pid}),
 				node:start(),
+				cache:create(NodeA),
 				erlang:send(Pid,init)
 			end,
 			{NodeA,Pid}.
@@ -116,6 +118,10 @@ lookupkey(FromNode,Key)->
 				cfindNode(FromNode,Key),
 				querry ! {sendlookup,Key},
 				querry ! reinit.
+updatekey(FromNode,{Key,Val})->
+				cfindNode(FromNode,Key),
+				querry ! {updatestore,{Key,Val}},
+				querry ! reinit.
 				
 querryreturn(Fr,Node)->
 	receive
@@ -139,6 +145,7 @@ querryreturn(Fr,Node)->
 					true->
 						[]
 				end,
+				
 				querryreturn(Fr,Node);
 			{sendlookup,Key}->
 				io:format("send node ~p~n",[Node]),
@@ -147,7 +154,16 @@ querryreturn(Fr,Node)->
 				   true->
 					   []
 				end,
+				
 				querryreturn(Fr,Node);
+			{updatestore,{Key,Val}}->
+					io:format("updating key  ~n"),
+					if (Node=/=[])->
+						endpoint:send_to_endpoint(Node,{update_key,{Node,{Key,Val}}});	
+				   true->
+					   []
+					end,
+					querryreturn(Fr,Node);
 			Any->
 				   io:format("received any by querry ~p~n",[Any]),
 				   querryreturn(Fr,Node)				   

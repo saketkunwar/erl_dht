@@ -12,7 +12,7 @@
 %%
 -export([send_to_endpoint/2]).
 
-%%
+%%			
 %% API Functions
 %%
 
@@ -28,7 +28,9 @@ send_to_endpoint(Endpoint,Msg)->
 			{_,{NId,Host,Port}}->
 				tcp_node_client:send(Host,Port,{Command,{Data,NId}});
 			{_,Pid}->
+				
 				erlang:send(Pid,{command,Command,Data})
+
 				%%Pid ! {Command,Data}
 				%%node:update_routetable(Data)
 			end.

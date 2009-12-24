@@ -13,14 +13,12 @@
 -export([start/0]).
 %% gen_server callbacks
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2,
-	 terminate/2, code_change/3]).
+	 		terminate/2, code_change/3]).
 -import(endpoint,[send_to_endpoint/2]).
-
 -import(node_helper,[extract_succ/3,extract_route/3,stripId/1]).
 -compile(export_all).
 
 
-%%
 %% API Functions
 %%
 start() -> gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
@@ -141,19 +139,14 @@ handle_call({update_pred,From}, _From,State) ->
 handle_call({predecessor_updates,{Predes,Origin,Entry,M,Dead}}, _From,State) ->
 	{Id,_Endp}=Predes,
 	[{_,[NodeId,End_p,Tab,{_N,SuccList,FingerTab,{SuccImm,Pred}}]}]=ets:lookup(State,Id),
-		
-            		if 
-							   (Dead=/=[])->
-								
-								   Ntemp=lists:subtract(SuccList,[Dead]),
-								   Nr=lists:append(M,Ntemp); %%adds newSuccList to currentSuccList
-						   		true->
-									Nr=lists:append(M,SuccList) %%adds newSuccList to currentSuccList
+      if 
+			(Dead=/=[])->
+						Ntemp=lists:subtract(SuccList,[Dead]),
+						Nr=lists:append(M,Ntemp); %%adds newSuccList to currentSuccList
+			true->
+						Nr=lists:append(M,SuccList) %%adds newSuccList to currentSuccList
 					end,			
                     if (Origin<(Entry+1))->
-                           
-						   
-                            
 							{_,NewSuccList,_}=extract_succ(NodeId,{Nr,true},Entry),
 							{_,NewFingerTab,_}=extract_route(NodeId,{Nr,true},Entry),
 							{PredId,_}=Pred,

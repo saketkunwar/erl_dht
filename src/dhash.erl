@@ -41,7 +41,7 @@ findit({Key,From,C})->gen_server:call(?MODULE,{findit,{Key,From,C}}).
 %%@doc transfers the {key,val} to new node  as determined by the hashing rules 
 xferkeys({From,SuNode})->gen_server:call(?MODULE,{xferkeys,{From,SuNode}}).
 %%@doc updates the current dict as per the transfer of {key,val} rule based n hashing function
-update_keyvalue({SuNode,XferKeys,From})->gen_server:call(?MODULE,{update_keyvalue,{SuNode,XferKeys,From}}).
+update_key({From,KV})->gen_server:call(?MODULE,{update_key,{From,KV}}).
 %%@doc stores  the {key,val} on the node
 store({From,KV})->gen_server:call(?MODULE,{store,{From,KV}}).
 %%@doc lookup the key ono the node
@@ -104,19 +104,31 @@ handle_call({xferkeys,{From,SuNode}}, _From,State) ->
 	end,
 	Reply=[NodeId,End_p,NewTab,{N,SuccList,FingerTab,{SuccImm,Pred}}],
 	{reply, Reply,State};
-handle_call({update_keyvalue,{SuNode,XferKeys,From}}, _From,State) ->
-	{Id,_}=SuNode,
-	[NodeId,End_p,_Tab,{N,SuccList,FingerTab,{SuccImm,Pred}}]=node:get_state(Id),
-	io:format("transfering keys ~p to ~p from ~p~n",[XferKeys,NodeId,From]),
-	NewTab=dict:from_list(XferKeys),
+
+handle_call({update_key,{From,KV}}, _From,State) ->
+	{Id,_}=From,
+	[NodeId,End_p,Tab,{N,SuccList,FingerTab,{SuccImm,Pred}}]=node:get_state(Id),
+	{Key,Rec_Val}=KV,
+	io:format("updating key ~p at node ~p~n",[Key,NodeId]),
+	case dict:find(Key,Tab) of
+		{ok,Value}->
+			NewTab=dict:store(Key,lists:append(Value,Rec_Val),Tab),
+			io:format("key val updated ~p~n",[Key]);
+		error->
+			NewTab=Tab,
+			io:format("the value with key ~p not found ~n",[Key])
+		end,
+	
 	Reply=[NodeId,End_p,NewTab,{N,SuccList,FingerTab,{SuccImm,Pred}}],
+	%%also update the ets
+	node:update({NodeId,Reply}), %%this updates the node but i need to find a method better method..only fine for simul
 	{reply, Reply,State};
 handle_call({store,{From,KV}}, _From,State) ->
 	{Id,_}=From,
 	[NodeId,End_p,Tab,{N,SuccList,FingerTab,{SuccImm,Pred}}]=node:get_state(Id),
 	{Key,Val}=KV,
 	NewTab=dict:store(Key,Val,Tab),
-	io:format("storing key ~p at node ~p~n",[Key,NodeId]),
+	io:format("storing the key ~p at node ~p~n",[Key,NodeId]),
 	Reply=[NodeId,End_p,NewTab,{N,SuccList,FingerTab,{SuccImm,Pred}}],
 	%%also update the ets
 	node:update({NodeId,Reply}), %%this updates the node but i need to find a method better method..only fine for simul
@@ -126,10 +138,12 @@ handle_call({lookup,{From,K}}, _From,State) ->
 	[NodeId,_End_p,Tab,{_N,_SuccList,_FingerTab,{_SuccImm,_Pred}}]=node:get_state(Id),
 	Key=K,
     %%which node should lookup key?
-	Val=dict:find(Key,Tab),
+	{ok,Val}=dict:find(Key,Tab),
     io:format("this Node ~p has key ~p with val ~p~n",[NodeId,Key,Val]),
+	send_to_endpoint(From,{lookedup_data,{Key,Val}}),
 	Reply=[],
 	{reply,Reply,State};  %% can do some with reply
+
 
 handle_call(stop, _From, Tab) ->
     {stop, normal, stopped, Tab}.

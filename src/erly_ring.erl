@@ -45,7 +45,6 @@ start_boot()->
 	case rpc:call(node(),erlang,whereis,[nodemon]) of
 		{badrpc,nodedown}->
 			io:format("master server down ..");
-			
 		undefined->
 			rpc:call(node(),tcp_node_server,start_link,[Bport]),
 			tcp_node_client:send(Host,Bport,{newnode,node()}),   %%register with server
@@ -70,12 +69,10 @@ init_boot(Endpoint)->
 readconfigdata(File)->
 	{ok,S}=file:consult(File),
 	Term=list_to_tuple(S),
-	
 	Term.
 
 %%@doc view the table state Type = succlist or fingertab   
 view(Type)->
-	
 	nnn ! {viewtab,Type,self()},
 	receive
 		{info,Data}->

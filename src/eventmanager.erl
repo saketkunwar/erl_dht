@@ -75,9 +75,9 @@ evaluate(Term)->
 			case Function of
 				join->
 					%%simul takes two function for adding node one with node num and the other random num
-					{{event,_},{function,join,_},{at,Time}}=Term,
+					{{event,_},{function,join,Node},{at,Time}}=Term,
 					%%{fun()->simul:add_node(Node,1) end,Time}
-					{{join,fun()->add_node(fun()->simul:get_boot() end) end},Time}; 
+					{{join,fun()->add_node(fun()->simul:get_boot() end,Node) end},Time}; 
 				leave->
 					{{event,_},{function,leave,Nth},{at,Time}}=Term,
 					{{leave,fun()->kill_node(Nth,fun()->boot:nodelist() end) end},Time};
@@ -91,14 +91,31 @@ evaluate(Term)->
 					%%FromNode is all from all nodes right now
 					{{event,_},{function,all_test,{Key,Val}},{at,Time}}=Term,
 					{{all_test,fun()->simul:test_all(Key,Val) end},Time};
+				store_file_to_cache->
+					{{event,_},{function,store_file_to_cache,{File,NodeId}},{at,Time}}=Term,
+					{{store_file_to_cache,fun()->cache:store_file(File,NodeId) end},Time};
+				eager_replication->
+					{{event,_},{function,eager_replication,{File,FromNode}},{at,Time}}=Term,
+					{{eager_replication,fun()->remote_replication:test_eager_simple(File,FromNode) end},Time};
+				fetch_file->
+					{{event,_},{function,fetch_file,{Id,File}},{at,Time}}=Term,
+					{{fetch_file,fun()->remote_fetch:test_fetch(Id,File) end},Time};
 				analyse->
 					{{event,_},{function,analyse,{File,Type}},{at,Time}}=Term,
 					{{analyse,fun()->simul:analyse(File,Type) end},Time}
 				end
-	end.
-add_node(Fun)->
+			end.
+				
+
+add_node(Fun,Node)-> 
 			Boot=Fun(),
-			simul:add_node(Boot),
+			case Node of
+				
+				random->
+					simul:add_node(Boot);
+				Any->
+					simul:add_node(Any,Boot)
+				end,
 			io:format("adding Node ~n").
 	
 kill_node(N,Fun)->
