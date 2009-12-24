@@ -16,6 +16,16 @@
 
 ERl_dht ver 1.0 is a simulation framework and tcp/ip deployment for evaluating and deploying distributed hash table .A simple routing as well as chord dht is currently implemented.
 
+
+Branch
+-----------
+There are two branches in this repository
+
+erly_ring--- contains the tcp/ip modules for working with tcp connectivity
+		(has been mergen to master)
+replication- contains modules for working with replication specific algorythm
+		(hasn't been merged to master yet)
+
 Requirement
 ------------
   Make sure you have erlang otp installed which can be obtained from
