@@ -1,0 +1,13 @@
+{init,{numNode,10,0},{resultfile,"result.txt"}}.
+{{event,1},{function,join,random},{at,0}}.
+{{event,2},{function,join,random},{at,0}}.
+{{event,3},{function,join,random},{at,0}}.
+{{event,4},{function,join,35432112},{at,1}}.
+{{event,4},{function,join,35432111},{at,1}}.
+{{event,9},{function,{store,"t1.mp4",[]},2},{at,0}}.
+{{event,29},{function,store_file_to_cache,{"t1.mp4",35432112}},{at,1}}.
+{{event,30},{function,eager_replication,{"t1.mp4",35432112}},{at,5}}.
+{{event,32},{function,fetch_file,{35432111,"t1.mp4"}},{at,1}}.
+
+
+
