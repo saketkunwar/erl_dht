@@ -19,12 +19,13 @@ ERl_dht ver 1.0 is a simulation framework and tcp/ip deployment for evaluating a
 
 Branch
 -----------
-There are two branches in this repository
+Currently there are two branches in this repositury:
 
-erly_ring--- contains the tcp/ip modules for working with tcp connectivity
-		(has been mergen to master)
-replication- contains modules for working with replication specific algorythm
-		(hasn't been merged to master yet)
+erly_ring -  contains the tcp/ip modules .This has been merged to master
+replication- contains modules for simple replication algorythm on top of the
+                  dht.This is a work in progress with the aim of implementing
+                  replication based on a probabilistic model.This branch has 
+	          yet to be merged with master.
 
 Requirement
 ------------
